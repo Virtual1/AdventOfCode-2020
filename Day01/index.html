@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <title>Sort a HTML List Numerically</title>
+  <body>
+    <p>Click the button to sort the list numerically, ascending:</p>
+    <button onclick="sortListUp()">Sort small to big</button>
+
+    <p>Click the button to sort the list numerically, descending:</p>
+    <button onclick="sortListDown()">Sort big to small</button>
+
+        <p>Click the button to reset the sorting:</p>
+        <button onclick="switching = true()">Reset</button>
+
+    <ul id="id01">
+      <li>1655</li>
+      <li>1384</li>
+      <li>1752</li>
+      <li>1919</li>
+      <li>1972</li>
+      <li>1766</li>
+      <li>1852</li>
+      <li>1835</li>
+      <li>1408</li>
+      <li>1721</li>
+      <li>1879</li>
+      <li>1846</li>
+      <li>1394</li>
+      <li>1577</li>
+      <li>1588</li>
+      <li>1097</li>
+      <li>1748</li>
+      <li>1585</li>
+      <li>765</li>
+      <li>1375</li>
+      <li>1806</li>
+      <li>1785</li>
+      <li>1824</li>
+      <li>1847</li>
+      <li>1037</li>
+      <li>1531</li>
+      <li>1989</li>
+      <li>1570</li>
+      <li>1625</li>
+      <li>1600</li>
+      <li>1832</li>
+      <li>1927</li>
+      <li>1691</li>
+      <li>1593</li>
+      <li>1936</li>
+      <li>1812</li>
+      <li>570</li>
+      <li>1391</li>
+      <li>1883</li>
+      <li>1592</li>
+      <li>1875</li>
+      <li>1185</li>
+      <li>1903</li>
+      <li>855</li>
+      <li>1331</li>
+      <li>1742</li>
+      <li>1884</li>
+      <li>1356</li>
+      <li>1944</li>
+      <li>1994</li>
+      <li>1556</li>
+      <li>1271</li>
+      <li>1572</li>
+      <li>1661</li>
+      <li>1914</li>
+      <li>1905</li>
+      <li>1581</li>
+      <li>1634</li>
+      <li>1252</li>
+      <li>1657</li>
+      <li>989</li>
+      <li>1907</li>
+      <li>1998</li>
+      <li>1040</li>
+      <li>1833</li>
+      <li>1612</li>
+      <li>1725</li>
+      <li>1680</li>
+      <li>1869</li>
+      <li>1900</li>
+      <li>1550</li>
+      <li>1768</li>
+      <li>1727</li>
+      <li>1930</li>
+      <li>1810</li>
+      <li>1841</li>
+      <li>734</li>
+      <li>1779</li>
+      <li>1774</li>
+      <li>1825</li>
+      <li>1446</li>
+      <li>1259</li>
+      <li>1552</li>
+      <li>1310</li>
+      <li>1885</li>
+      <li>1689</li>
+      <li>1929</li>
+      <li>1959</li>
+      <li>787</li>
+      <li>1642</li>
+      <li>1890</li>
+      <li>1164</li>
+      <li>1986</li>
+      <li>1796</li>
+      <li>1465</li>
+      <li>1217</li>
+      <li>1741</li>
+      <li>1480</li>
+      <li>1683</li>
+      <li>1808</li>
+      <li>1058</li>
+      <li>1970</li>
+      <li>1361</li>
+      <li>2003</li>
+      <li>1898</li>
+      <li>1668</li>
+      <li>1754</li>
+      <li>1773</li>
+      <li>1235</li>
+      <li>1158</li>
+      <li>1975</li>
+      <li>1479</li>
+      <li>1995</li>
+      <li>1648</li>
+      <li>1023</li>
+      <li>883</li>
+      <li>1553</li>
+      <li>1658</li>
+      <li>1794</li>
+      <li>1747</li>
+      <li>1978</li>
+      <li>1268</li>
+      <li>1966</li>
+      <li>1192</li>
+      <li>1886</li>
+      <li>1471</li>
+      <li>1548</li>
+      <li>1819</li>
+      <li>1551</li>
+      <li>1958</li>
+      <li>1732</li>
+      <li>1676</li>
+      <li>1745</li>
+      <li>1501</li>
+      <li>1858</li>
+      <li>1652</li>
+      <li>1596</li>
+      <li>473</li>
+      <li>1314</li>
+      <li>1814</li>
+      <li>1409</li>
+      <li>1877</li>
+      <li>1344</li>
+      <li>1735</li>
+      <li>1635</li>
+      <li>1273</li>
+      <li>871</li>
+      <li>1643</li>
+      <li>1599</li>
+      <li>1565</li>
+      <li>1695</li>
+      <li>1803</li>
+      <li>1764</li>
+      <li>1778</li>
+      <li>1823</li>
+      <li>1831</li>
+      <li>1701</li>
+      <li>282</li>
+      <li>1089</li>
+      <li>1623</li>
+      <li>1639</li>
+      <li>1568</li>
+      <li>1469</li>
+      <li>1674</li>
+      <li>1818</li>
+      <li>1992</li>
+      <li>1597</li>
+      <li>1711</li>
+      <li>1359</li>
+      <li>1851</li>
+      <li>1496</li>
+      <li>1630</li>
+      <li>1755</li>
+      <li>1529</li>
+      <li>1881</li>
+      <li>1718</li>
+      <li>1916</li>
+      <li>1325</li>
+      <li>1578</li>
+      <li>1441</li>
+      <li>1722</li>
+      <li>1545</li>
+      <li>1472</li>
+      <li>1783</li>
+      <li>1497</li>
+      <li>1791</li>
+      <li>1183</li>
+      <li>1926</li>
+      <li>1937</li>
+      <li>1255</li>
+      <li>1095</li>
+      <li>1451</li>
+      <li>1395</li>
+      <li>1665</li>
+      <li>1432</li>
+      <li>1693</li>
+      <li>1821</li>
+      <li>1938</li>
+      <li>1941</li>
+      <li>2002</li>
+    </ul>
+
+    <script>
+      function sortListUp() {
+        var listUp, i, switching, b, shouldSwitch;
+        listUp = document.getElementById("id01");
+        switching = true;
+        /* Make a loop that will continue until
+  no switching has been done: */
+        while (switching) {
+          // start by saying: no switching is done:
+          switching = false;
+          b = list.getElementsByTagName("LI");
+          // Loop through all list-items:
+          for (i = 0; i < b.length - 1; i++) {
+            // start by saying there should be no switching:
+            shouldSwitch = false;
+            /* check if the next item should
+      switch place with the current item: */
+
+            if (Number(b[i].innerHTML) > Number(b[i + 1].innerHTML)) {
+              /* if next item is numerically
+        lower than current item, mark as a switch
+        and break the loop: */
+              shouldSwitch = true;
+              break;
+            }
+          }
+          if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+            b[i].parentNode.insertBefore(b[i + 1], b[i]);
+            switching = true;
+          }
+        }
+      }
+
+      
+      function sortListDown() {
+        var listDown, i, switching, b, shouldSwitch;
+        listDown = document.getElementById("id01");
+        switching = true;
+        /* Make a loop that will continue until
+  no switching has been done: */
+        while (switching) {
+          // start by saying: no switching is done:
+          switching = false;
+          b = list.getElementsByTagName("LI");
+          // Loop through all list-items:
+          for (i = 0; i < b.length - 1; i++) {
+            // start by saying there should be no switching:
+            shouldSwitch = false;
+            /* check if the next item should
+      switch place with the current item: */
+
+            if (Number(b[i].innerHTML) < Number(b[i + 1].innerHTML)) {
+              /* if next item is numerically
+        lower than current item, mark as a switch
+        and break the loop: */
+              shouldSwitch = true;
+              break;
+            }
+          }
+          if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+            b[i].parentNode.insertBefore(b[i + 1], b[i]);
+            switching = true;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
